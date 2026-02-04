@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук зображень Pixabay</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Пошук зображень</h1>
+        
+        <form class="search-form" id="search-form">
+            <input
+                type="text"
+                name="query"
+                autocomplete="off"
+                placeholder="Search images..."
+            />
+            <button type="submit">Пошук</button>
+        </form>
+
+        <ul class="gallery"></ul>
+
+        <button type="button" class="load-more" id="load-more" style="display: none;">
+            Load more
+        </button>
+
+        <div class="loader" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
